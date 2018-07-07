@@ -1,1 +1,2 @@
-# myHatchery
+# MyHatchery
+***Hatchery management system***

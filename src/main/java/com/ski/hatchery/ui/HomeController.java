@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HomeController {
 
-	@RequestMapping("/")
+	 @RequestMapping("/index")
 	public String index() {
 		return "index";
 	}
 	
-	@RequestMapping("/home")
+	//@RequestMapping("/home")
 	public String home(@RequestParam(value="name", required=false,defaultValue="Welcome") String name, Model model) {
 		model.addAttribute("name", name);
 		return "home";
